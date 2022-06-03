@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+
+
+{% block content%}
+
+
+{% if sites_all_list %}
+
+<ul>
+ {% for object in sites_context_all_list %}
+
+ <li><a href="#">{{object.name}}</a></li>
+
+{% endfor%}
+
+</ul>
+{% else %}
+<p>Пока нет записей в этой категории.</p>
+{% endif %}
+
+{% endblock%}

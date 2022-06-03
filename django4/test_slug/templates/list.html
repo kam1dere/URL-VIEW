@@ -1,0 +1,13 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+
+{% for statya in object_list %}
+
+<h1>Статья</h1>
+
+<li><a href="/statya/{{statya.slug}}/">{{ statya }}</a></li>
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base/base.html" %}
+
+
+{% block content %}
+
+<ul>
+{% for nitik in object_list %}
+    <li>
+        <h2>
+  <a href="{{nitik.slug}}/">{{ nitik.name }}</a>
+        </h2>
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}
